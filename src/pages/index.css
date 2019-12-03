@@ -1,0 +1,35 @@
+.landing-wrapper {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(136, 148, 164, 0.418));  */
+    background: #5d5dac;
+    
+}
+
+.space {
+    min-height: 20vh;
+    width: 100%;
+    background-image: linear-gradient(black, rgba(136, 148, 164, 0));
+    z-index: 3; 
+}
+
+.content-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.right {
+    text-align: right;
+    margin: 140px auto;
+}
+
+h1 {
+    font-size: 85px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.gatsby-image-wrapper {
+    height: 120vh;
+    -webkit-mask-image:-webkit-gradient(linear, center bottom, center top, color-stop(50%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0, 0)));
+
+}
