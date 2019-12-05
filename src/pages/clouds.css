@@ -1,12 +1,12 @@
 .clouds {
     width: 100%;
-    height: 50%;
+    height: 18vh;
     background: url(../images/cloud.png);
-    -webkit-mask-image:-webkit-gradient(linear, center bottom, center top, color-stop(0%, rgba(0,0,0,0)), color-stop(50%, rgba(0,0,0,.5)), color-stop(100%, rgba(0,0,0, 0)));
+    -webkit-mask-image:-webkit-gradient(linear, center bottom, center top, color-stop(0%, rgba(0,0,0,0)), color-stop(50%, rgba(0,0,0,.5)), color-stop(90%, rgba(0,0,0, 0)));
 
     animation: animate 60s linear infinite;
     position: absolute;
-    margin-top: -100px;
+    margin-top: -35vh;
 }
 
 @keyframes animate
@@ -20,3 +20,108 @@
         background-position: -5440px;
     }
 }
+
+@media only screen and (min-width: 576px) {
+   .clouds {
+       height: 200px;
+       margin-top: -350px;
+
+   }
+}
+
+@media only screen and (min-width: 768px) {
+    .clouds {
+        height: 200px;
+        margin-top: -425px;
+    }
+ }
+
+ @media only screen and (min-width: 1024px) {
+    .clouds {
+        height: 300px;
+        margin-top: -625px;
+    }
+ }
+
+ @media only screen and (min-width: 1280px) {
+    .clouds {
+        height: 300px;
+        margin-top: -650px;
+    }
+ }
+
+ @media only screen and (min-width: 1366px) {
+    .clouds {
+        height: 365px;
+        margin-top: -750px;
+    }
+ }
+
+ @media only screen and (min-width: 1700px) {
+    .clouds {
+        margin-top: -800px;
+    }
+ }
+
+ @media only screen and (min-width: 1920px) {
+    .clouds {
+        height: 400px;
+        margin-top: -975px;
+    }
+ }
+
+ @media only screen and (min-width: 2000px) {
+    .clouds {
+        margin-top: -1000px;
+    }
+ }
+
+ @media only screen and (min-width: 2300px) {
+    .clouds {
+        height: 400px;
+        margin-top: -1200px;
+    }
+ }
+
+ @media only screen and (min-width: 2560px) {
+    .clouds {
+        height: 500px;
+        margin-top: -1350px;
+    }
+ }
+
+ @media only screen and (min-width: 3000px) {
+    .clouds {
+        height: 600px;
+        margin-top: -1500px;
+    }
+ }
+
+
+ @media only screen and (min-width: 3400px) {
+    .clouds {
+        height: 800px;
+        margin-top: -1900px;
+    }
+ }
+
+ @media only screen and (min-width: 3840px) {
+    .clouds {
+        height: 800px;
+        margin-top: -2000px;
+    }
+ }
+
+ @media only screen and (min-width: 4040px) {
+    .clouds {
+        height: 800px;
+        margin-top: -2400px;
+    }
+ }
+
+ @media only screen and (min-width: 5000px) {
+    .clouds {
+        height: 860px;
+        margin-top: -2750px;
+    }
+ }

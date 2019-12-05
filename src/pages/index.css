@@ -5,7 +5,13 @@
     min-height: 100vh;
 }
 
-.space {
+.content-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 100px 40px 0px;
+}
+
+.space-container {
     min-height: 20vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(93, 93, 172, 1) 80%, rgba(0, 0, 0, 0) 100%); 
@@ -15,18 +21,41 @@
 .cloud-container {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 1000px;
+}
+
+.project-card {
+    margin: 85px;
+    border: 1px solid white;
+    background: white
+}
+
+.project-container {
+   position: relative;
+}
+
+.project-overlay {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    z-index: 2;
+}
+
+.project-overlay:hover {
+    background: black;
+
+}
+
+.project-title {
+    text-align: center;
+    color: black;
 }
 
 .ground {
     position: relative;
 }
 
-.content-container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 100px 40px 0px;
-}
+
 
 .right {
     text-align: right;
@@ -111,9 +140,10 @@ label {
     }
 
     p {
-        font-size: 32px;
-        line-height: 37px;
+        font-size: 25px;
+        line-height: 35px;
     }
+
 }
 
 @media only screen and (min-width: 1024px) {
