@@ -1,14 +1,30 @@
 [
     {
-        "title": "Front-End",
-        "items": ["HTML5", "CSS3", "JavaScript", "React JS", "Angular", "jQuery", "Bootstrap", "Firebase", "TensorFlow.js"]
+        "title": "Languages",
+        "items": ["JavaScript", "PHP", "HTML5", "TypeScript"]
     },
     {
-        "title": "Back-End",
-        "items": ["Node JS", "Express", "PHP", "SQL", "MongoDB", "AWS"]
+        "title": "Frameworks",
+        "items": ["React JS", "Laravel", "Node JS", "Bootstrap", "jQuery"]
+    },
+    {
+        "title": "Data",
+        "items": ["MySQL", "Mongo DB", "Graph QL"]
+    },
+    {
+        "title": "Cloud Platforms",
+        "items": ["AWS", "Azure"]
+    },
+    {
+        "title": "Third Party Tools",
+        "items": ["VS Code", "GIT"]
+    },
+    {
+        "title": "Other Skills",
+        "items": ["CSS3", "API Development", "UI & UX Design", "Agile Development", "Graphic Design"]
     },
     {
         "title": "Hobbies",
-        "items": ["Camping", "Hiking", "Foreign Languages", "Reading", "Programming" ]
+        "items": ["Camping", "Hiking", "Skiing", "Foreign Languages", "Non-fiction Reading" ]
     }
 ]

@@ -3,8 +3,6 @@ body {
 }
 
 .landing-wrapper {
-    /* background-image: linear-gradient(rgba(93, 93, 172, 1) 80%, rgba(0, 0, 0, 0)); 
-    background: rgb(93, 93, 172); */
     position: relative;
     min-height: 100vh;
 }
@@ -32,7 +30,6 @@ body {
     position: relative;
 }
 
-
 .right {
     text-align: right;
     margin: 140px auto;
@@ -58,7 +55,6 @@ p {
     -webkit-mask-image:-webkit-gradient(linear, center bottom, center top, color-stop(0%, rgba(0,0,0,0)), color-stop(5%, rgba(0,0,0,1)), color-stop(50%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0, 0)));
 }
 
-
 .landing-content {
     position: relative;
 }
@@ -66,6 +62,7 @@ p {
 #resume-button {
     margin: 0 auto;
     float: right;
+    width: 165px;
 }
 
 .image-two {
@@ -107,19 +104,17 @@ label {
 
 .project-card {
     width: 100%;
-  max-width: 320px;
-  height: 480px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  text-align: left;
-  /* border: thin solid rgba(51,122,183,.1); */
-  border-radius: 5px;
-  /* box-shadow: 0 12px 12px 0 #d3d3d3; */
-  box-sizing: border-box;
-  background-color: #fff;
-  font-size: 14px;
-  font-weight: 300;
+    max-width: 320px;
+    height: 480px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: left;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .project-title {
@@ -136,7 +131,9 @@ label {
     line-height: 17px;
 }
 
-
+.submit-button {
+    border-radius: 5px;
+}
 
 @media only screen and (min-width: 576px) {
     h1 {
@@ -153,7 +150,6 @@ label {
     h1 {
         font-size: 65px;
     }
-
 }
 
 @media only screen and (min-width: 1024px) {

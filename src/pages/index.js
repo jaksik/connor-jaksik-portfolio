@@ -1,29 +1,28 @@
 import React from "react"
 import Img from "gatsby-image"
 
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { Button, Row, Col } from "reactstrap"
+
 import Skills from "../components/skills"
 import projects from "../data/projects.json"
 import SEO from "../components/seo"
+
+import resume from "../data/resume.pdf"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css"
 import "./stars.css"
 import "./clouds.css"
 
 const IndexPage = ({ data }) => {
-  console.log("data: ", data);
   const projectImgs = data.ProjectImgs.edges;
 
   return (
-
     <>
       <SEO title="Home" />
       <div className="landing-wrapper">
         <div class="stars"></div>
         <div class="twinkling"></div>
-
-
         <div style={{ position: `absolute`, zIndex: `1`, width: `100%` }}>
           <div className="space-container">
             <div className="content-container">
@@ -34,10 +33,6 @@ const IndexPage = ({ data }) => {
             </div>
             <Img fluid={data.mountain.childImageSharp.fluid} className="landing-image" style={{ width: `100%` }} />
             <div className="clouds"></div>
-
-            {/* <div className="cloud-container">
-                <Img fluid={data.mountain.childImageSharp.fluid} className="landing-image" style={{position:`absolute`, width: `100%` }}/>
-              </div> */}
           </div>
 
           <div className="ground">
@@ -68,17 +63,15 @@ const IndexPage = ({ data }) => {
                 <span style={{ paddingRight: `33px` }}>- Connor Jaksik</span>
                 <br />
                 <span>Boulder, Colorado</span>
-              </p>
-              <div>
-                <a download>
-                <Button color="info" size="large" id="resume-button">Resume</Button>
+                <a href={resume} download> <br />
+                  <Button color="info" size="" className="mt-2" id="resume-button">Resume</Button>
                 </a>
-              </div>
+              </p>
             </div>
           </div>
 
           <div className="content-container">
-            <h1 style={{ textAlign: `center`, marginBottom:`30px`}}>This Is My Work</h1>
+            <h1 style={{ textAlign: `center`, marginBottom: `30px` }}>This Is My Work</h1>
             <Row className="">
               {projects.map((project, index) => {
                 const image = projectImgs.find(n => {
@@ -109,7 +102,7 @@ const IndexPage = ({ data }) => {
             </Row>
           </div>
 
-          <Skills/>
+          <Skills />
 
           <h1 style={{ margin: `90px auto 0px`, textAlign: `center`, padding: `0` }}>Let's Do This</h1>
 
@@ -120,7 +113,6 @@ const IndexPage = ({ data }) => {
             data-netlify-honeypot="bot-field"
             style={{ width: `80%`, margin: `0 auto`, border: `1px solid darkbrown`, borderRadius: `38px` }}
           >
-
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
             <input style={{ display: `none` }} type="text" /><br />
@@ -128,23 +120,16 @@ const IndexPage = ({ data }) => {
             <input required className="form-input" name="email" placeholder="Email*" type="email" /><br />
             <input className="form-input" name="phone" placeholder="Phone Number" type="number" /><br />
             <textarea className="form-input" name="message" placeholder="Your message here..." type="textarea" /><br />
-
-            <button className="submit-button">Send It!</button>
-
+            <Button className="submit-button" color="success" type="submit">Send It!</Button>
           </form>
-          <footer style={{color:`white`}} className="mt-5 text-center">
-          © {new Date().getFullYear()}, Connor Jaksik All Rights Reserved
+
+          <footer style={{ color: `white` }} className="mt-5 text-center">
+            © {new Date().getFullYear()}, Connor Jaksik All Rights Reserved
         </footer>
         </div>
-
-
       </div>
-
-      
-
     </>
   )
-
 }
 
 export default IndexPage
