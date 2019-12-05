@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Front-End",
+        "items": ["HTML5", "CSS3", "JavaScript", "React JS", "Angular", "jQuery", "Bootstrap", "Firebase", "TensorFlow.js"]
+    },
+    {
+        "title": "Back-End",
+        "items": ["Node JS", "Express", "PHP", "SQL", "MongoDB", "AWS"]
+    },
+    {
+        "title": "Hobbies",
+        "items": ["Camping", "Hiking", "Foreign Languages", "Reading", "Programming" ]
+    }
+]

@@ -1,26 +1,37 @@
 [
     {
         "title": "Montezuma Media",
-        "description": "Montezuma Media is an adventure photography and video production company.",
+        "description": "Montezuma Media is an adventure photography and video production company located in the Colorado High Country. Using PWA technology I was able to provide them with an optimized way to show off their work and not sacrifice site performance.",
         "image": "montezuma-media.png",
-        "url": "https://montezumamedia.com"
+        "url": "https://montezumamedia.com",
+        "github": "https://github.com/jaksik/montezuma-media"
     },
     {
         "title": "Limitless Wake Tech",
-        "description": "T",
+        "description": "A wakeboard instructor in Austin, Texas who was needing a way to get found easier online. Using SEO best practices, I built him a website that Google loves and impresses his clientel.",
         "image": "limitless-wake.png",
-        "url": "https://limitlesswake.com"
+        "url": "https://limitlesswake.com",
+        "github": "https://github.com/jaksik/limitless-wake"
     },
     {
         "title": "Aspen Applications",
-        "description": "T",
+        "description": "The website of my full service digital media small business. The business was created for marketing and brand recognition purposes. We offer web development, digital asset, and consulting services.",
         "image": "aspen-apps.png",
-        "url": "https://aspenapps.com"
+        "url": "https://aspenapps.com",
+        "github": "https://github.com/jaksik/aspen-apps"
     },
     {
         "title": "TensorFlow Color Classifier",
-        "description": "T",
+        "description": "This color classification application was build from a passion and curiousity for the potential of machine learning. It uses the TensorFlow JS library to train a model on RGB color data. A user can then pick any color and the application will categorize the color into one of nine categories.",
         "image": "color-classifier.png",
-        "url": "d"
+        "url": "https://jaksik.github.io/html-ml-classifier/",
+        "github": "https://github.com/jaksik/html-ml-classifier"
+    },
+    {
+        "title": "Mountaineering Trivia",
+        "description": "The first custom website that I build, Mountaineering Trivia is an edcuational game that teaches people about basic mountaineering equipment. Its main functionality is built using JavaScript, and the styling was created using CSS3.",
+        "image": "mountaineering.png",
+        "url": "https://jaksik.github.io/mountaineering-trivia/",
+        "github": "https://github.com/jaksik/mountaineering-trivia"
     }
 ]
