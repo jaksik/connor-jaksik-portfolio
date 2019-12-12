@@ -10,7 +10,7 @@ body {
 .content-container {
     max-width: 960px;
     margin: 0 auto;
-    padding: 100px 40px 0px;
+    padding: 100px 10px 0px;
 }
 
 .space-container {
@@ -149,6 +149,11 @@ label {
 @media only screen and (min-width: 768px) {
     h1 {
         font-size: 65px;
+    }
+    .content-container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 100px 40px 0px;
     }
 }
 

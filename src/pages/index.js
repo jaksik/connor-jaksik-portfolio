@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import { Button, Row, Col } from "reactstrap"
 
+import DropDown from "../components/drop-down"
 import Skills from "../components/skills"
 import projects from "../data/projects.json"
 import SEO from "../components/seo"
@@ -101,7 +102,8 @@ const IndexPage = ({ data }) => {
               })}
             </Row>
           </div>
-
+          
+          
           <Skills />
 
           <h1 style={{ margin: `90px auto 0px`, textAlign: `center`, padding: `0` }}>Let's Do This</h1>
