@@ -60,7 +60,13 @@ const IndexPage = ({ data }) => {
                 <br />
                 Dont be shy, send me a message, let's get coffee, and talk about something great that we can create together.
               </p>
-              <p style={{ textAlign: `right` }}>
+              
+              <Row className="no-gutters mt-4">
+                <Col xs="12" sm="4">
+                  <Img fluid={data.profilePic.childImageSharp.fluid}/>
+                </Col>
+                <Col xs="12" sm="8">
+                <p style={{ textAlign: `right` }}>
                 <span style={{ paddingRight: `33px` }}>- Connor Jaksik</span>
                 <br />
                 <span>Boulder, Colorado</span>
@@ -68,11 +74,13 @@ const IndexPage = ({ data }) => {
                   <Button color="info" size="" className="mt-2" id="resume-button">Resume</Button>
                 </a>
               </p>
+                </Col>
+              </Row>
             </div>
           </div>
 
           <div className="content-container">
-            <h1 style={{ textAlign: `center`, marginBottom: `30px` }}>This Is My Work</h1>
+            <h1 style={{ textAlign: `center`, margin: `100px auto 30px` }} className="mt-5 mb-5">This Is My Work</h1>
             <Row className="">
               {projects.map((project, index) => {
                 const image = projectImgs.find(n => {
@@ -106,7 +114,7 @@ const IndexPage = ({ data }) => {
           
           <Skills />
 
-          <h1 style={{ margin: `90px auto 0px`, textAlign: `center`, padding: `0` }}>Let's Do This</h1>
+          <h1 style={{ margin: `100px auto 0px`, textAlign: `center`, paddingTop: `100px` }} className="mt-5">Let's Do This</h1>
 
           <form
             name="contact"
@@ -152,7 +160,7 @@ export const query = graphql`
         }
       }
     }
-    trees: file(relativePath: { eq: "river.png" }) {
+    profilePic: file(relativePath: { eq: "profile-pic.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
