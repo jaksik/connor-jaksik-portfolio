@@ -90,7 +90,7 @@ const IndexPage = ({ data }) => {
                           className="card-img_src center-block"
                         />
                       </a>
-                      <div style={{ borderTop: `4px solid #718190` }}>
+                      <div style={{ borderTop: `4px solid #718190`, padding:`0 8px` }}>
                         <h5>{project.title}</h5>
                         <p className="project-description">{project.description}</p>
                         <strong><a href={project.url} target="_blank">Demo</a></strong><br />
