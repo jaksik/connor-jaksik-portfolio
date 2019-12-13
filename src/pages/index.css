@@ -69,6 +69,16 @@ p {
     -webkit-mask-image:-webkit-gradient(linear, center top, center bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(30%, rgba(0,0,0, 1)));
 }
 
+.skill-button {
+    background: #2c4fa2;
+    color: #e0e0e0;
+}
+
+.skill-button:hover {
+    background: #0f399b;
+    color: white;
+}
+
 form {
     max-width: 650px;
     text-align: center;
@@ -86,7 +96,7 @@ input, select, textarea, label {
     border-top: none;
     border-left: none; 
     border-right: none;
-    border-bottom: 1.5px solid white;
+    border-bottom: 2.5px solid #718190;
     background: none;
     font-size: larger;
     color: white;
@@ -155,6 +165,10 @@ label {
         margin: 0 auto;
         padding: 100px 40px 0px;
     }
+
+    /* .project-card {
+        margin: 0 40px;
+    } */
 }
 
 @media only screen and (min-width: 1024px) {

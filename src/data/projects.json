@@ -22,7 +22,7 @@
     },
     {
         "title": "TensorFlow Color Classifier",
-        "description": "This color classification application was build from a passion and curiousity for the potential of machine learning. It uses the TensorFlow JS library to train a model on RGB color data. A user can then pick any color and the application will categorize the color into one of nine categories.",
+        "description": "This color classification app was built out of a curiousity for machine learning. It uses the TensorFlow JS library to train a model on RGB color data. A user can then pick any color and the app will categorize the color into one of nine categories.",
         "image": "color-classifier.png",
         "url": "https://jaksik.github.io/html-ml-classifier/",
         "github": "https://github.com/jaksik/html-ml-classifier"

@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { Button, Row, Col } from "reactstrap"
 
 import DropDown from "../components/drop-down"
@@ -60,20 +60,20 @@ const IndexPage = ({ data }) => {
                 <br />
                 Dont be shy, send me a message, let's get coffee, and talk about something great that we can create together.
               </p>
-              
+
               <Row className="no-gutters mt-4">
-                <Col xs="12" sm="4">
-                  <Img fluid={data.profilePic.childImageSharp.fluid}/>
+                <Col xs="8" sm="4" className="offset-2 offset-sm-0">
+                  <Img fluid={data.profilePic.childImageSharp.fluid} />
                 </Col>
                 <Col xs="12" sm="8">
-                <p style={{ textAlign: `right` }}>
-                <span style={{ paddingRight: `33px` }}>- Connor Jaksik</span>
-                <br />
-                <span>Boulder, Colorado</span>
-                <a href={resume} download> <br />
-                  <Button color="info" size="" className="mt-2" id="resume-button">Resume</Button>
-                </a>
-              </p>
+                  <p style={{ textAlign: `right` }} className="mt-4 mt-sm-0">
+                    <span style={{ paddingRight: `33px` }}>- Connor Jaksik</span>
+                    <br />
+                    <span>Boulder, Colorado</span>
+                    <a href={resume} download> <br />
+                      <Button color="info" size="" className="mt-2" id="resume-button">Resume</Button>
+                    </a>
+                  </p>
                 </Col>
               </Row>
             </div>
@@ -81,14 +81,14 @@ const IndexPage = ({ data }) => {
 
           <div className="content-container">
             <h1 style={{ textAlign: `center`, margin: `100px auto 30px` }} className="mt-5 mb-5">This Is My Work</h1>
-            <Row className="">
+            <Row className="no-gutters">
               {projects.map((project, index) => {
                 const image = projectImgs.find(n => {
                   return n.node.relativePath === `projects/${project.image}`;
                 });
                 const imageSizes = image.node.childImageSharp.sizes;
                 return (
-                  <Col xs="12" sm="6" md="4">
+                  <Col xs="12" sm="6" lg="4" className="p-sm-2 p-lg-3">
                     <div className="project-card">
                       <a href={project.url} target="_blank">
                         <Img
@@ -98,7 +98,7 @@ const IndexPage = ({ data }) => {
                           className="card-img_src center-block"
                         />
                       </a>
-                      <div style={{ borderTop: `4px solid #718190`, padding:`0 8px` }}>
+                      <div style={{ borderTop: `4px solid #718190`, padding: `0 8px` }}>
                         <h5>{project.title}</h5>
                         <p className="project-description">{project.description}</p>
                         <strong><a href={project.url} target="_blank">Demo</a></strong><br />
@@ -110,8 +110,8 @@ const IndexPage = ({ data }) => {
               })}
             </Row>
           </div>
-          
-          
+
+
           <Skills />
 
           <h1 style={{ margin: `100px auto 0px`, textAlign: `center`, paddingTop: `100px` }} className="mt-5">Let's Do This</h1>
@@ -130,11 +130,11 @@ const IndexPage = ({ data }) => {
             <input required className="form-input" name="email" placeholder="Email*" type="email" /><br />
             <input className="form-input" name="phone" placeholder="Phone Number" type="number" /><br />
             <textarea className="form-input" name="message" placeholder="Your message here..." type="textarea" /><br />
-            <Button className="submit-button" color="success" type="submit">Send It!</Button>
+            <Button className="submit-button" color="success" type="submit" style={{ background: `#066806`, borderColor: `#066806` }}>Send It!</Button>
           </form>
 
-          <footer style={{ color: `white` }} className="mt-5 text-center">
-            © {new Date().getFullYear()}, Connor Jaksik All Rights Reserved
+          <footer style={{ color: `white`, fontSize: `13px` }} className="mt-5 text-center">
+            © {new Date().getFullYear()}, Connor Jaksik All Rights Reserved. <Link to="/privacy-policy">Privacy policy</Link>.
         </footer>
         </div>
       </div>
@@ -148,7 +148,7 @@ export const query = graphql`
   query {
     mountain: file(relativePath: { eq: "mountain-top.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000) {
+        fluid(quality: 80) {
           ...GatsbyImageSharpFluid
         }
       }
