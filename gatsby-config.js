@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Connor Jaksik Portfolio`,
+    title: `Connor Jaksik Web Development`,
     description: `Connor Jaksik's official web development portfolio.`,
     author: `@jaksik`,
   },
@@ -33,8 +33,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `connor-jaksik-portfolio`,
-        short_name: `jaksik`,
+        name: `connor-jaksik-web-development`,
+        short_name: `connor-web-dev`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
