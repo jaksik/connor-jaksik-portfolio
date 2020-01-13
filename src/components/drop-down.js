@@ -11,7 +11,7 @@ const Example = (props) => {
     console.log("Props : ", props)
     return (
         <Row className="no-gutters">
-            <Col xs="6" sm="6">
+            <Col xs="9" sm="6">
                 <Row className="no-gutters justify-content-end">
                     <Button color="muted" onClick={toggle} style={{ margin: `1.25rem`, width: `190px` }} className="justify-content-center skill-button"><span style={{ float: `left` }}>{category.title}</span> <span style={{ display: (isOpen ? `block` : `none`), paddingLeft: `8px`, float: `right` }}> &#9650;</span> <span style={{ display: (isOpen ? `none` : `block`), paddingLeft: `8px`, float: `right` }}>&#9660;</span></Button>
                 </Row>
