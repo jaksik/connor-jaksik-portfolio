@@ -17,7 +17,7 @@ import "./clouds.css"
 
 const IndexPage = ({ data }) => {
   const projectImgs = data.ProjectImgs.edges;
-
+ 
   return (
     <>
       <SEO title="Home" />
