@@ -41,7 +41,7 @@ const IndexPage = ({ data }) => {
             <Img fluid={data.background.childImageSharp.fluid} style={{ position: `absolute`, width: `100%`, height: `100%`, zIndex: `-1` }} />
             <Img fluid={data.background.childImageSharp.fluid} style={{ position: `absolute`, width: `100%`, height: `200vh`, marginTop: `100vh`, zIndex: `-1` }} />
             <div className="content-container">
-              <h1>I am<br /> Connor Jaksik</h1>
+              <h1>I am Connor Jaksik</h1>
               <p>
                 For over a decade before becoming a web developer I was a Skilled Tradesman.
                 I completed hundereds of carpentry and welding projects in several different states and countries.

@@ -16,6 +16,21 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Caveat`,
+            variants: [`700`]
+          },
+          {
+            family: `Sniglet`,
+            variants: [`400`]
+          }
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `connor-jaksik-portfolio`,

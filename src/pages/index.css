@@ -2,6 +2,10 @@ body {
     background: black;
 }
 
+* {
+    font-family: sniglet;
+}
+
 .landing-wrapper {
     position: relative;
     min-height: 100vh;
@@ -37,13 +41,13 @@ body {
 
 h1 {
     font-size: 35px;
-    font-family: cursive;
+    font-family: caveat;
     color: white;
 }
 
 p {
     color: white;
-    font-family: cursive;
+    font-family: sniglet;
     font-size: 20px;
     line-height: 25px;
 }

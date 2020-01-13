@@ -22,7 +22,7 @@ const Example = (props) => {
                         <CardBody>
                             <ul>
                                 {category.items.map(item => (
-                                    <li style={{ color: `#e0e0e0`, fontWeight: `bold` }}>{item}</li>
+                                    <li style={{ color: `#e0e0e0`, fontWeight: `bold`, fontFamily: `sniglet`}}>{item}</li>
                                 ))}
                             </ul>
                         </CardBody>
