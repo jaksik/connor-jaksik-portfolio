@@ -5,11 +5,11 @@ import { Link, graphql } from "gatsby"
 import { Button, Row, Col } from "reactstrap"
 
 import DropDown from "../components/drop-down"
-import Skills from "../components/skills"
 import projects from "../data/projects.json"
 import SEO from "../components/seo"
 
-import resume from "../data/resume.pdf"
+import resume from "../data/connor-jaksik.pdf"
+import skills from "../data/skills.json"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css"
 import "./stars.css"
@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
  
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Web Developer" />
       <div className="landing-wrapper">
         <div class="stars"></div>
         <div class="twinkling"></div>
@@ -112,7 +112,18 @@ const IndexPage = ({ data }) => {
           </div>
 
 
-          <Skills />
+
+          <div className="skill-section content-container">
+            <h1 className="text-center mt-5 mb-5">These Are My Skills</h1>
+            {skills.map((category, index) => {
+                const itemsLength = skills.length
+                return (
+                    <>
+                        <DropDown category={category} itemsLength={itemsLength} index={index}/>
+                    </>
+                )
+            })}
+        </div>
 
           <h1 style={{ margin: `100px auto 0px`, textAlign: `center`, paddingTop: `100px` }} className="mt-5">Let's Do This</h1>
 
@@ -129,11 +140,11 @@ const IndexPage = ({ data }) => {
             <input required className="form-input" name="name" placeholder="First and Last Name*" type="text" /><br />
             <input required className="form-input" name="email" placeholder="Email*" type="email" /><br />
             <input className="form-input" name="phone" placeholder="Phone Number" type="number" /><br />
-            <textarea className="form-input" name="message" placeholder="Your message here..." type="textarea" /><br />
-            <Button className="submit-button" color="success" type="submit" style={{ background: `#066806`, borderColor: `#066806` }}>Send It!</Button>
+            <textarea required className="form-input" name="message" placeholder="Your message here...*" type="textarea" /><br />
+            <Button className="submit-button" type="submit">Send It!</Button>
           </form>
 
-          <footer style={{ color: `white`, fontSize: `13px` }} className="mt-5 text-center">
+          <footer style={{ color: `white`, fontSize: `13px` }} className="mt-5 pt-5 text-center">
             © {new Date().getFullYear()}, Connor Jaksik All Rights Reserved. <Link to="/privacy-policy">Privacy policy</Link>.
         </footer>
         </div>
@@ -153,23 +164,23 @@ export const query = graphql`
         }
       }
     }
-    background: file(relativePath: { eq: "att.jpg" }) {
+    background: file(relativePath: { eq: "rock-background.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000) {
+        fluid(quality: 80) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     profilePic: file(relativePath: { eq: "profile-pic.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000) {
+        fluid(quality: 80) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     clouds: file(relativePath: { eq: "cloud.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000) {
+        fluid(quality: 80) {
           ...GatsbyImageSharpFluid
         }
       }

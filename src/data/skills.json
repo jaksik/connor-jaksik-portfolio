@@ -1,11 +1,11 @@
 [
     {
         "title": "Languages",
-        "items": ["JavaScript", "PHP", "ES6", "HTML5"]
+        "items": ["JavaScript", "TypeScript", "ES6", "PHP"]
     },
     {
         "title": "Frameworks",
-        "items": ["React JS", "Laravel", "Node JS", "Bootstrap", "jQuery"]
+        "items": ["React JS", "Node JS", "ASP.Net", "Bootstrap", "jQuery"]
     },
     {
         "title": "Data",
@@ -17,11 +17,11 @@
     },
     {
         "title": "Third Party Tools",
-        "items": ["VS Code", "GIT"]
+        "items": ["VS Code", "GIT", "Docker"]
     },
     {
         "title": "Other Skills",
-        "items": ["CSS3", "API Development", "UI & UX Design", "Agile Development", "Graphic Design"]
+        "items": ["CSS3", "UI & UX Design", "Graphic Design", "Agile Development"]
     },
     {
         "title": "Hobbies",

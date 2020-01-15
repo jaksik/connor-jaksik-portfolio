@@ -3,23 +3,23 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const NotFoundPage = () => (
+const PrivactyPolicyPage = () => (
     <Layout>
         <SEO title="Privacy Policy" />
         <Link to="/" className="m-2 pt-3">Go Home</Link>
         <div style={{ color: `white`, maxWidth: `960px`, padding: `20px`, margin:`0 auto` }}>
             <h1>Privacy Policy</h1>
             <p>Effective date: December 13, 2019</p>
-            <p>Connor Jaksik's Web Portfolio ("us", "we", or "our") operates the https://connorjaksik.com website (hereinafter referred to as the "Service").</p>
+            <p>Connor Jaksik's Web Portfolio ("us", "we", or "our") operates the https://connorjaksik.dev website (hereinafter referred to as the "Service").</p>
             <p>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. The Privacy Policy  for Connor Jaksik's Web Portfolio has been created with the help of <a href="https://www.termsfeed.com/privacy-policy-generator/">Privacy Policy Generator</a>.</p>
 
-            <p>We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from https://connorjaksik.com</p>
+            <p>We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from https://connorjaksik.dev</p>
 
             <h2>Definitions</h2>
             <ul>
                 <li>
                     <p><strong>Service</strong></p>
-                    <p>Service is the https://connorjaksik.com website operated by Connor Jaksik's Web Portfolio</p>
+                    <p>Service is the https://connorjaksik.dev website operated by Connor Jaksik's Web Portfolio</p>
                 </li>
                 <li>
                     <p><strong>Personal Data</strong></p>
@@ -113,10 +113,10 @@ const NotFoundPage = () => (
             <h2>Contact Us</h2>
             <p>If you have any questions about this Privacy Policy, please contact us:</p>
             <ul>
-                <li>By visiting this page on our website: https://connorjaksik.com</li>
+                <li>By visiting this page on our website: https://connorjaksik.dev</li>
             </ul>
         </div>
     </Layout>
 )
 
-export default NotFoundPage
+export default PrivactyPolicyPage

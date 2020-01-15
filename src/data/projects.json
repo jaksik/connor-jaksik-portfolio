@@ -29,7 +29,7 @@
     },
     {
         "title": "Mountaineering Trivia",
-        "description": "The first custom website that I build, Mountaineering Trivia is an edcuational game that teaches people about basic mountaineering equipment. Its main functionality is built using JavaScript, and the styling was created using CSS3.",
+        "description": "The first website that I built from scratch, Mountaineering Trivia is an edcuational game that teaches people about basic mountaineering equipment. It was created with HTML5, JavaScript, jQuery, and CSS3.",
         "image": "mountaineering.png",
         "url": "https://jaksik.github.io/mountaineering-trivia/",
         "github": "https://github.com/jaksik/mountaineering-trivia"

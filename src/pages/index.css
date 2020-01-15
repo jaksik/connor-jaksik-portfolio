@@ -37,6 +37,7 @@ body {
 .right {
     text-align: right;
     margin: 140px auto;
+    padding-right: 10px;
 }
 
 h1 {
@@ -73,16 +74,6 @@ p {
     -webkit-mask-image:-webkit-gradient(linear, center top, center bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(30%, rgba(0,0,0, 1)));
 }
 
-.skill-button {
-    background: #2c4fa2;
-    color: #e0e0e0;
-}
-
-.skill-button:hover {
-    background: #0f399b;
-    color: white;
-}
-
 form {
     max-width: 650px;
     text-align: center;
@@ -100,7 +91,7 @@ input, select, textarea, label {
     border-top: none;
     border-left: none; 
     border-right: none;
-    border-bottom: 2.5px solid #718190;
+    border-bottom: 2.5px solid #c2d1df;
     background: none;
     font-size: larger;
     color: white;
@@ -146,7 +137,15 @@ label {
 }
 
 .submit-button {
-    border-radius: 5px;
+    border-color: #0f399b;
+    background: #2c4fa2;
+    color: #e0e0e0;
+}
+
+.submit-button:hover {
+    border-color: #0f399b;
+    background: #0f399b;
+    color: white;
 }
 
 @media only screen and (min-width: 576px) {
@@ -169,10 +168,6 @@ label {
         margin: 0 auto;
         padding: 100px 40px 0px;
     }
-
-    /* .project-card {
-        margin: 0 40px;
-    } */
 }
 
 @media only screen and (min-width: 1024px) {
