@@ -58,7 +58,7 @@ const IndexPage = ({ data }) => {
                 </Col>
                 <Col xs="12" sm="8">
                   <p style={{ textAlign: `right` }} className="mt-4 mt-sm-0">
-                    <span style={{ paddingRight: `33px` }}>- Connor Jaksik</span>
+                    <span style={{ paddingRight: `62px` }}>- Connor Jaksik</span>
                     <br />
                     <span>Fort Collins, Colorado</span>
                     <a href={resume} download> <br />
