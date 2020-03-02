@@ -1,24 +1,17 @@
 [
     {
-        "title": "Montezuma Media",
-        "description": "Montezuma Media is an adventure photography and video production company located in the Colorado High Country. Using PWA technology I was able to provide them with an optimized way to show off their work and not sacrifice site performance.",
-        "image": "montezuma-media.png",
-        "url": "https://montezumamedia.com",
-        "github": "https://github.com/jaksik/montezuma-media"
+        "title": "Liam Novak",
+        "description": "Liam Novak is an adventure photographer from Silverthorne, Colorado who's mission is to share the world from new perspectives. Using PWA technology I was able to provide him with an optimized way to show off his photos and not sacrifice site performance.",
+        "image": "liam-novak-3.png",
+        "url": "https://liamnovak.com",
+        "github": "https://github.com/jaksik/montezuma-media/tree/liamnovak"
     },
     {
-        "title": "Limitless Wake Tech",
-        "description": "A wakeboard instructor in Austin, Texas who was needing a way to get found easier online. Using SEO best practices, I built him a website that Google loves and impresses his clientel.",
+        "title": "Limitless Wake",
+        "description": "When Chandler Crouch started offering wakeboarding lessons in Austin, Texas he needed a way to reach his clients and be heard over the competition. By using Gatsby and Netlify CMS I was able to build him a dynamic site that was optimized for Google that could help him be found online.",
         "image": "limitless-wake.png",
         "url": "https://limitlesswake.com",
         "github": "https://github.com/jaksik/limitless-wake"
-    },
-    {
-        "title": "Aspen Applications",
-        "description": "The website of my full service digital media small business. The business was created for marketing and brand recognition purposes. We offer web development, digital asset, and consulting services.",
-        "image": "aspen-apps.png",
-        "url": "https://aspenapps.com",
-        "github": "https://github.com/jaksik/aspen-apps"
     },
     {
         "title": "TensorFlow Color Classifier",

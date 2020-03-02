@@ -17,7 +17,7 @@ import "./clouds.css"
 
 const IndexPage = ({ data }) => {
   const projectImgs = data.ProjectImgs.edges;
- 
+
   return (
     <>
       <SEO title="Web Developer" />
@@ -43,22 +43,13 @@ const IndexPage = ({ data }) => {
             <div className="content-container">
               <h1>I am Connor Jaksik</h1>
               <p>
-                For over a decade before becoming a web developer I was a Skilled Tradesman.
-                I completed hundereds of carpentry and welding projects in several different states and countries.
-                I had the opportunity to build projects for many amazing people and lead teams of incredibly hard working individuals.
-                <br />
-                <br />
-                This developed my invaluable work ethic of no compromises and only producing the highest quality work.
-                I became obsessed with software and digital assets as I began to realize their unique qualities of being able to
-                reach any one in the world at any time and their ability to be replicated an infite number of times.
-                <br />
-                <br />
-                I believe that one produces their best work when their life is balanced with relationships and other passions.
-                That's why setting a side time to be away from my computer has become sacred to me. If I don't respond to an email quickly
-                it's most likely because I'm climbing a mountin or skiing with friends.
-                <br />
-                <br />
-                Dont be shy, send me a message, let's get coffee, and talk about something great that we can create together.
+                I’m a Full Stack Developer from Fort Collins, Colorado who is passionate about working with others to create awesome websites and innovative software. I enjoy learning new skills and staying on top of the latest technologies that way my work isn’t just relevant today, but for years to come.
+                <br/><br/>
+                I have a stubborn “can do” attitude which is why I’m always taking on challenging tasks and attempting to solve previously unsolvable problems. I enjoy hearing varying perspectives and collaborating with others to ultimately discover the best solution.
+                <br/><br/>
+                If I’m not on my computer you can most likely find me climbing a 14er, skiing in the backcountry, or pursuing some of my other passions such as photography, writing, and reading.
+                <br/><br/>
+                Don’t be shy! Send me a message and let’s talk about what we can build together!
               </p>
 
               <Row className="no-gutters mt-4">
@@ -69,7 +60,7 @@ const IndexPage = ({ data }) => {
                   <p style={{ textAlign: `right` }} className="mt-4 mt-sm-0">
                     <span style={{ paddingRight: `33px` }}>- Connor Jaksik</span>
                     <br />
-                    <span>Boulder, Colorado</span>
+                    <span>Fort Collins, Colorado</span>
                     <a href={resume} download> <br />
                       <Button color="info" size="" className="mt-2" id="resume-button">Resume</Button>
                     </a>
@@ -116,14 +107,14 @@ const IndexPage = ({ data }) => {
           <div className="skill-section content-container">
             <h1 className="text-center mt-5 mb-5">These Are My Skills</h1>
             {skills.map((category, index) => {
-                const itemsLength = skills.length
-                return (
-                    <>
-                        <DropDown category={category} itemsLength={itemsLength} index={index}/>
-                    </>
-                )
+              const itemsLength = skills.length
+              return (
+                <>
+                  <DropDown category={category} itemsLength={itemsLength} index={index} />
+                </>
+              )
             })}
-        </div>
+          </div>
 
           <h1 style={{ margin: `100px auto 0px`, textAlign: `center`, paddingTop: `100px` }} className="mt-5">Let's Do This</h1>
 
